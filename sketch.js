@@ -44,7 +44,7 @@ function setup() {
  astronaut.addAnimation("sad",sadAstronaut)
  astronaut.addAnimation("happy",spaceCraft)
  astronaut.scale = 0.6;
- astronaut.debug = true
+ astronaut.debug = false
  astronaut.setCollider("rectangle",0,0,180,360)
 
  gameOver = createSprite(width/2, height/2 - 180)
@@ -71,7 +71,7 @@ function setup() {
  gemsGroup = createGroup()
 
  invisibleGround = createSprite(200,height - 50,400,10);
- invisibleGround.visible = true
+ invisibleGround.visible = false
 
  score = 0;
 }
